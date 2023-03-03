@@ -285,6 +285,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Small_Plane02
       objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: af29f0ea7e5403641b3b244ede69c374, type: 3}
+      propertyPath: m_TagString
+      value: Plane
+      objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: af29f0ea7e5403641b3b244ede69c374, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -348,6 +352,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af06887d47021ff4b86bd86664e9cfda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 25
+  rotationSpeed: 40
+  verticalInput: 10
 --- !u!1001 &1610064403
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -482,14 +489,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1627741772}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 168.5, z: -21.6}
+  m_LocalRotation: {x: -0, y: -0.70957625, z: -0, w: 0.7046287}
+  m_LocalPosition: {x: 21.11, y: 164.14, z: -4.34}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -90.401, z: 0}
 --- !u!114 &1627741776
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -502,4 +509,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eab5c0f902fb76548ab975e57909f3a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 1391196169}
+  Plane: {fileID: 1391196169}
+  offset: {x: 40, y: 3, z: 0}

@@ -2,10 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FollowPlayer : MonoBehaviour
+public class FollowPlane : MonoBehaviour
 {
-    public GameObject player;
-    public Vector3 offset = new Vector3(0, 8, -20);
+    public GameObject Plane;
+    public Vector3 offset = new Vector3(40, 3, 0);
 
     // Start is called before the first frame update
     void Start()
@@ -16,6 +16,6 @@ public class FollowPlayer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position = player.transform.position + offset;
+        transform.position = Plane.transform.position + offset;
     }
 }
