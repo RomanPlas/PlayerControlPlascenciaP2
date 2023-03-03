@@ -5,11 +5,11 @@ using UnityEngine;
 public class PlaneController : MonoBehaviour
 {
     private float speed = 25.0f;
-    private float rotateSpeed = 20.0f;
+    private float rotateSpeed = 10.0f;
     
     //private float forwardInput;
     private float rotateInput;
-    private float upInput;
+    private float verticalInput;
 
     // Start is called before the first frame update
     void Start()
@@ -24,13 +24,13 @@ public class PlaneController : MonoBehaviour
     {
         rotateInput = Input.GetAxis("Horizontal");
         // forwardInput = Input.GetAxis("Vertical");
-        upInput = Input.GetAxis("Vertical");
+        verticalInput = Input.GetAxis("Vertical");
         // Move the vehicle forward
         transform.Translate(Vector3.forward * Time.deltaTime * speed);
 
-        transform.Rotate(new Vector3(0, 0, 20) * rotateInput * rotateSpeed * Time.deltaTime);
+        transform.Rotate(new Vector3(0, 0, 10) * rotateInput * rotateSpeed * Time.deltaTime);
 
-        transform.Rotate(new Vector3(0, 20, 0) * upInput * rotateSpeed * Time.deltaTime);
+        transform.Rotate(new Vector3(0, 10, 0) * verticalInput * rotateSpeed * Time.deltaTime);
 
 
     }
